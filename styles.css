@@ -1,0 +1,98 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-weight: 500 800; /* This tells CSS it supports weights from 500 to 800 */
+  font-style: normal;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+  
+body {
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 4px 0;   
+  
+}
+
+p {
+  font-weight: 500;
+  color: var(--gray-500);
+}
+
+.main-deck {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100%;
+  width: 90%;
+  max-width: 380px;
+  padding: 24px;
+  border: 1px solid var(--gray-950);
+  border-radius: 15px;
+  margin: 0;
+  gap: 12px;
+
+  box-shadow: 12px 12px 0px 0px var(--gray-950);
+  overflow: hidden;
+}
+.label {
+  background-color: var(--yellow);
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.published {
+  text-align: left;
+}
+.main-img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.attribution img {
+  width: 32px;
+  height: 32px;
+}
+
+.attribution p {
+  color: var(--gray-950); /* The name is usually darker than the description */
+  font-weight: 800;       /* Make Greg's name stand out */
+}
+
+.main-text {
+  width: 100%;
+}
